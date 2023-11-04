@@ -15,8 +15,7 @@ def qr_read(image_name):
     return link
 
 
-def main():
-    #
+def processing_document():
     time.sleep(5)
     print(' [+] - start - ')
     for i in range(1):
@@ -27,6 +26,10 @@ def main():
         time.sleep(1)
         print(f' [+] - link = {qr_read(f"qr{str(i)}.png")}')
     print(' [+] - finish - ')
+
+
+def main():
+    processing_document()
 
 
 if __name__ == "__main__":
